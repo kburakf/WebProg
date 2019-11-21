@@ -1,29 +1,31 @@
 package edu.web;
 
 import java.util.ArrayList;
+import java.util.Observable;
 
 public class User {
-
-    private ArrayList<Product> products;
+    static User instance = new User();
+    public static ArrayList<Product> products;
     private final String username = "a";
     private final String password = "a";
 
-    User(){
+
+    public static User getInstance(){
         products = new ArrayList<Product>();
-        products.add(new Product(0,"Macbook Pro",0));
-        products.add(new Product(1,"Macbook Air",10));
-        products.add(new Product(2,"Iphone X",100));
+        return instance;
     }
+
+    public void add(Product product){
+        products.add(product);
+    }
+
 
     public ArrayList<Product> getProducts() {
         return products;
     }
-
-
     public String getUsername() {
         return username;
     }
-
     public String getPassword() {
         return password;
     }

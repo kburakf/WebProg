@@ -15,5 +15,16 @@
         <servlet-name>Tester</servlet-name>
         <url-pattern>/home</url-pattern>
     </servlet-mapping>
+    <!-- -->
+    <servlet>
+        <servlet-name>Add</servlet-name>
+        <display-name>Add</display-name>
+        <servlet-class>edu.web.Add</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Add</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
 
 </web-app>

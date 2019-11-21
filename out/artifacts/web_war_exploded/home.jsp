@@ -23,5 +23,12 @@
 
 
 
+<form action="add" method="post">
+    ID=<input type="text" name="newId" size="32"> <br>
+    Name=<input type="text" name="newName" size="32"> <br>
+    Price=<input type="text" name="newPrice" size="32"> <br>
+    <input name="act" type="submit" value="Add">
+</form>
+
 </body>
 </html>
